@@ -36,6 +36,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-highlight-words": "^0.20.0",
+    "react-icons": "^4.11.0",
+    "react-map-gl": "^7.1.6",
     "remark": "^14.0.2",
     "remark-gfm": "^3.0.1",
     "remark-mdx": "^2.3.0",
