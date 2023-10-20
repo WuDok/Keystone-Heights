@@ -231,39 +231,19 @@ function NavigationGroup({
 
 export const navigation: Array<NavGroup> = [
   {
-    title: 'Understanding Risk and Resilience',
+    title: 'Section 1',
     links: [
       { title: 'Introduction', href: '/' },
-      { title: 'Critical Infrastructure', href: '/infrastructure' },
-      { title: 'National Risk Assessments', href: '/risk-assessments' },
-      { title: 'Mitigation Menu', href: '/mitigation-strategies' },
+      { title: 'Part 1', href: '/infrastructure' },
+      { title: 'Part 2', href: '/risk-assessments' },
+      { title: 'Part 3', href: '/mitigation-strategies' },
     ],
   },
   {
-    title: 'Know Your Environment',
+    title: 'Merak App Documentation',
     links: [
-      { title: 'Population and Land Use', href: '/population' },
-      { title: 'History and Trends', href: '/history' },
-      { title: 'Risk Maps', href: '/risk-maps' },
-      { title: 'Impact Maps', href: '/conversations' },
-      { title: 'Mitigation Maps', href: '/messages' },
-    ],
-  },
-  {
-    title: 'Crack the Codes',
-    links: [
-      { title: 'Implications', href: '/risk-maps' },
-      { title: 'Zoning Modifications', href: '/conversations' },
-      { title: 'Building Code Modifications', href: '/messages' },
-    ],
-  },
-  {
-    title: 'Take Action: Incremental Investment',
-    links: [
-      { title: 'The Top Three', href: '/risk-maps' },
-      { title: 'The Wish List', href: '/conversations' },
-      { title: 'Next Steps', href: '/messages' },
-      { title: 'Finding Funding', href: '/messages' },
+      { title: 'MDX Markdown', href: '/markdown' },
+      { title: 'Map Examples', href: '/map-examples' },
     ],
   },
 ]
