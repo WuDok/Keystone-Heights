@@ -10,7 +10,7 @@ import { type Section } from '@/components/SectionProvider'
 export const metadata: Metadata = {
   title: {
     template: '%s - GIFT',
-    default: 'Protocol API Reference',
+    default: 'GIFT',
   },
 }
 
