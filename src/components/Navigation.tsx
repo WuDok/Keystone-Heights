@@ -234,8 +234,8 @@ export const navigation: Array<NavGroup> = [
     title: 'Neptune Beach, Florida',
     links: [
       { title: 'Understanding Risk & Resilience', href: '/' },
-      { title: 'Part 1', href: '/infrastructure' },
-      { title: 'Part 2', href: '/risk-assessments' },
+      { title: 'Know Your Environment', href: '/infrastructure' },
+      { title: 'Take Action', href: '/risk-assessments' },
       { title: 'Part 3', href: '/mitigation-strategies' },
     ],
   },
