@@ -1,4 +1,6 @@
 import { Libraries } from '@/components/Libraries'
+import { MDXImage } from '@/components/MDXImage'
+import LandCover from './LandCover.png'
 
 export const metadata = {
   title: 'Know Your Environment',
@@ -7,29 +9,44 @@ export const metadata = {
 
 # Know Your Environment
 
-The GIFT analysis generated a set of environmental impact maps to address climate change challenges within [city]. Using advanced geospatial technologies, these maps visually highlight climate-related vulnerabilities across regions. By consolidating various data sources, they offer a straightforward view of potential impacts.
+The GIFT analysis generated a set of environmental impact maps to address climate change challenges within Keystone Heights, Florida. Using advanced geospatial technologies, these maps visually highlight climate-related vulnerabilities across regions. By consolidating various data sources, they offer a straightforward view of potential impacts.
+
 These tools are essential for decision-makers, planners, and the public to strategize and respond effectively to climate risks.
+
 Impact is relative to the potential impact of climate-related outcomes across your city. Explore the maps to gain a clearer understanding of the challenges ahead.
 
 ## Precipitation Extremes
 
 Climate change amplifies precipitation extremes, leading to increased instances of both severe flooding and acute water stress. These extremes are further intensified by high population density and specific land use practices.
 
-[combined flood risk/water stress map ZOOMABLE]
+[combined flood risk/water stress map] RISK
+
+Notes: Need to complete legend.
+
+<iframe
+  width="100%"
+  height="450"
+  title="Felt Map"
+  src="https://felt.com/embed/map/Untitled-Map-QfV89AB3xTXiqsF31n4eSKA?loc=29.781568,-82.033983,15.44z"
+></iframe>
 
 An elevation sink is essentially a depression in the ground where water accumulates because there's no clear path for it to drain. In these areas, water tends to pond, creating marshy conditions and potentially damaging properties over time.
 
-[additional flood detail: elevation sinks ZOOMABLE]
+[additional flood detail: elevation sinks]
+
+Notes: Where is this map?
 
 ## Temperature Extremes
 
 Climate change drives more frequent and intense temperature extremes, particularly impacting urban environments. Factors like high population density and specific land use practices exacerbate these extremes, particularly through the urban heat island effect.
 
-[heat island effect map ZOOMABLE]
+[heat island effect map]
+
+Notes: Where is this map?
 
 ## The Top Three Contributing Factors
 
-The top three drivers of increased climate-related outcomes within [city] include the following:
+The top three drivers of increased climate-related outcomes within Keystone Heights include the following:
 
 - One
 - Two
@@ -49,57 +66,101 @@ CHART 3: Temperature Extremes: Heat island effect
 
 When mapping climate risk outcomes, such as droughts, floods, and heat islands, it's crucial to understand the contributing factors. These include physical factors, like soil hydrology and slope, as well as human factors, such as urban development patterns, land use, and population density. Each factor plays a significant role in shaping these risks, influencing their frequency, intensity, and impact on communities and ecosystems.
 
-### Land Use
-
-Mapping land use provides a visual representation of areas most susceptible to climate-related impacts based on their current usage. This spatial understanding aids in targeted decision-making, ensuring resources and interventions are directed where they're needed most to enhance resilience.
-
-[original data] [impact map] STATIC
-
 ### Land Cover
 
 Mapping land cover offers a clear picture of how natural and man-made features can influence vulnerability to climate events. Such visual insights enable proactive planning and mitigation strategies, ensuring that areas with specific land cover types are managed to optimize resilience against climate threats.
 
-[original data] [impact map] STATIC
+[original data] [impact map] LAND COVER (Slacked Emeka for Risk Map)
+
+<iframe
+  width="100%"
+  height="600"
+  frameborder="0"
+  title="Felt Map"
+  src="https://felt.com/embed/map/Untitled-Map-SXsnBuXzQkOuDs8TMKPBLC?loc=29.77952,-82.02206,14z"
+></iframe>
 
 ### Population Density
 
 Mapping population density highlights areas where large numbers of people may be exposed to climate-related hazards. This spatial understanding is crucial for prioritizing interventions and resources to protect vulnerable communities and ensure their safety and well-being.
 
-[original data] [impact map] STATIC
+[original data] [impact map]
+
+Notes: Fields and method used for map. Should there be a calculated density field?
+i.e. Map is currently using POP100 field and Jenks, 5
+
+<iframe
+  width="100%"
+  height="600"
+  frameborder="0"
+  title="Felt Map"
+  src="https://felt.com/embed/map/Untitled-Map-OBaSJDTwRfuNlAylrlrT5A?loc=29.78011,-82.02445,14z"
+></iframe>
 
 ### Proximity to Surface Water & Wetlands
 
 Mapping proximity to water and wetlands pinpoints areas potentially vulnerable to flooding, storm surges, and sea-level rise. This information is vital for informed urban planning and disaster preparedness, ensuring that communities near water bodies are adequately protected from climate-related threats.
 
-[original data] [impact map] STATIC
+[original data] [impact map]
+
+NOTES: There are 2 different layers. Do we want a surface & wetland or should it be combined?
 
 ### Soil Drainage
 
 Mapping soil drainage helps determine areas susceptible to waterlogging, erosion, or drought conditions. Understanding these soil characteristics is essential for land management and infrastructure planning, ensuring resilience against climate-induced soil-related challenges.
 
-[original data] [impact map] STATIC
+[original data] [impact map] SOIL Drainage
+
+Note: Empty Group A, A/D, and ?
+
+<iframe
+  width="100%"
+  height="600"
+  frameborder="0"
+  title="Felt Map"
+  src="https://felt.com/embed/map/Untitled-Map-W0eai9B6sSxqCVgsG9AawD9BA?loc=29.78151,-82.02161,14z"
+></iframe>
 
 ### Tree Canopy
 
 Mapping tree canopy reveals areas that benefit from natural cooling, carbon sequestration, and stormwater absorption provided by trees. Recognizing these zones is crucial for urban planning and conservation efforts, ensuring that regions with dense canopies are preserved and enhanced to combat climate-related challenges.
 
-[original data] [impact map] STATIC
+[original data] [impact map] TREE CANOPY
+
+Notes: Does this look right? Review Percentil Calc method?
+
+<iframe
+  width="100%"
+  height="600"
+  frameborder="0"
+  title="Felt Map"
+  src="https://felt.com/embed/map/Untitled-Map-p22Bp1x2TkKQdMOuFRM4GA?loc=29.77955,-82.02113,14z"
+></iframe>
 
 ### Elevation
 
 Mapping elevation helps pinpoint areas vulnerable to sea-level rise, storm surges, and downstream flooding. Understanding topographical variations is essential for informed infrastructure and community planning, ensuring that low-lying regions are adequately protected or adapted to handle climate-induced water threats.
 
-[original data] [impact map] STATIC
+[original data] [impact map] ELEVATION
+
+<iframe
+  width="100%"
+  height="600"
+  frameborder="0"
+  title="Felt Map"
+  src="https://felt.com/embed/map/Untitled-Map-Q815VYkdR52upVYVa20K2A?loc=29.78076,-82.02328,14z"
+></iframe>
 
 ### Slope
 
 Mapping slope aids in determining areas at risk of landslides, erosion, and rapid water runoff during heavy rainfall. Recognizing these gradient variations is crucial for land use planning and infrastructure development, ensuring stability and safety in regions with steep terrains.
 
-[original data] [impact map] STATIC
+[original data] [impact map] SLOPE
 
-### Sea Level Rise
-
-IF APPLICABLE
-Mapping sea level rise highlights areas that are, or will become, susceptible to coastal flooding, erosion, and habitat loss. This information is vital for coastal planning, infrastructure adaptation, and community preparedness to safeguard assets and populations from the escalating threats of rising seas.
-
-[original data] [impact map] STATIC
+<iframe
+  width="100%"
+  height="600"
+  frameborder="0"
+  title="Felt Map"
+  src="https://felt.com/embed/map/Untitled-Map-VriJU1OtTDC8LA5ARV0KoC?loc=29.77865,-82.02159,14z"
+></iframe>

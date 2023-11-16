@@ -231,7 +231,7 @@ function NavigationGroup({
 
 export const navigation: Array<NavGroup> = [
   {
-    title: 'Neptune Beach, Florida',
+    title: 'Keystone Heights, Florida',
     links: [
       { title: 'Understanding Risk & Resilience', href: '/' },
       { title: 'Know Your Environment', href: '/environment' },
