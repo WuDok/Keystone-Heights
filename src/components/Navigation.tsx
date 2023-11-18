@@ -238,13 +238,13 @@ export const navigation: Array<NavGroup> = [
       { title: 'Take Action', href: '/take-action' },
     ],
   },
-  {
-    title: 'Merak App Documentation',
-    links: [
-      { title: 'MDX Markdown', href: '/markdown' },
-      { title: 'Map Examples', href: '/map-examples' },
-    ],
-  },
+  // {
+  //   title: 'Merak App Documentation',
+  //   links: [
+  //     { title: 'MDX Markdown', href: '/markdown' },
+  //     { title: 'Map Examples', href: '/map-examples' },
+  //   ],
+  // },
 ]
 
 export function Navigation(props: React.ComponentPropsWithoutRef<'nav'>) {
