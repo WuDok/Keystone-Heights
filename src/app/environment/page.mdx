@@ -1,6 +1,8 @@
 import { Libraries } from '@/components/Libraries'
 import { MDXImage } from '@/components/MDXImage'
-import LandCover from './LandCover.png'
+import Chart from './chart.png'
+import Table from './high_table.png'
+import Map from './map.png'
 
 export const metadata = {
   title: 'Know Your Environment',
@@ -23,10 +25,10 @@ Climate change amplifies precipitation extremes, leading to increased instances 
 
 <iframe
   width="100%"
-  height="600"
+  height="450"
   frameborder="0"
   title="Felt Map"
-  src="https://felt.com/embed/map/Combined-Risk-QfV89AB3xTXiqsF31n4eSKA?loc=29.781571,-82.035443,15.36z"
+  src="https://felt.com/embed/map/Combined-Risk-QfV89AB3xTXiqsF31n4eSKA?loc=29.78082,-82.04492,14z"
 ></iframe>
 
 An elevation sink is essentially a depression in the ground where water accumulates because there's no clear path for it to drain. In these areas, water tends to pond, creating marshy conditions and potentially damaging properties over time.
@@ -51,11 +53,9 @@ The top three drivers of increased climate-related outcomes within Keystone Heig
 
 Zoning codes can directly influence land use and development patterns. The following charts present the percentage of parcels within each zone that exhibit a high risk of climate impact for each potential outcome:
 
-CHART 1: Precipitation Extremes: Flooding
-
-CHART 2: Precipitation Extremes: Water stress
-
-CHART 3: Temperature Extremes: Heat island effect
+<MDXImage src={Map} alt="Flooding" width={800} />
+<MDXImage src={Chart} alt="Flooding" width={800} />
+<MDXImage src={Table} alt="Flooding" width={800} />
 
 ## Contributing Factors
 
@@ -67,10 +67,10 @@ Land cover offers a clear picture of how natural and human-made features can inf
 
 <iframe
   width="100%"
-  height="600"
+  height="450"
   frameborder="0"
   title="Felt Map"
-  src="https://felt.com/embed/map/Land-Cover-SXsnBuXzQkOuDs8TMKPBLC?loc=29.78039,-82.03411,15.03z"
+  src="https://felt.com/embed/map/Land-Cover-SXsnBuXzQkOuDs8TMKPBLC?loc=29.7809,-82.04544,14z"
 ></iframe>
 
 ### Population Density
@@ -79,10 +79,10 @@ Population density highlights areas where large numbers of people may be exposed
 
 <iframe
   width="100%"
-  height="600"
+  height="450"
   frameborder="0"
   title="Felt Map"
-  src="https://felt.com/embed/map/Population-Density-OBaSJDTwRfuNlAylrlrT5A?loc=29.780401,-82.034077,15.45z"
+  src="https://felt.com/embed/map/Population-Density-OBaSJDTwRfuNlAylrlrT5A?loc=29.78085,-82.04561,14z"
 ></iframe>
 
 ### Proximity to Surface Water & Wetlands
@@ -91,10 +91,10 @@ Proximity to water and wetlands pinpoints areas potentially vulnerable to floodi
 
 <iframe
   width="100%"
-  height="600"
+  height="450"
   frameborder="0"
   title="Felt Map"
-  src="https://felt.com/embed/map/Proximity-To-Water-Wetlands-hgXXMxeRTDi5Z5W9Cp4MNYB?loc=29.77574,-82.03675,14.82z"
+  src="https://felt.com/embed/map/Proximity-To-Water-Wetlands-hgXXMxeRTDi5Z5W9Cp4MNYB?loc=29.78134,-82.04578,14z"
 ></iframe>
 
 ### Soil Drainage
@@ -103,10 +103,10 @@ Soil drainage helps determine areas susceptible to waterlogging, erosion, or dro
 
 <iframe
   width="100%"
-  height="600"
+  height="450"
   frameborder="0"
   title="Felt Map"
-  src="https://felt.com/embed/map/Soil-Drainage-W0eai9B6sSxqCVgsG9AawD9BA?loc=29.780335,-82.034039,15.43z"
+  src="https://felt.com/embed/map/Soil-Drainage-W0eai9B6sSxqCVgsG9AawD9BA?loc=29.78119,-82.04595,14z"
 ></iframe>
 
 ### Impervious Surfaces
@@ -115,10 +115,10 @@ Mapping impervious surfaces provides critical insights into how urban developmen
 
 <iframe
   width="100%"
-  height="600"
+  height="450"
   frameborder="0"
   title="Felt Map"
-  src="https://felt.com/embed/map/Untitled-Map-2W6ibjWWRF2OI7WS3jRKUA?loc=29.781416,-82.034721,15.23z"
+  src="https://felt.com/embed/map/Impervious-Surfaces-2W6ibjWWRF2OI7WS3jRKUA?loc=29.78023,-82.0457,14z"
 ></iframe>
 
 ### Tree Canopy
@@ -127,10 +127,10 @@ Tree canopy reveals areas that benefit from natural cooling, carbon sequestratio
 
 <iframe
   width="100%"
-  height="600"
+  height="450"
   frameborder="0"
   title="Felt Map"
-  src="https://felt.com/embed/map/Tree-Canopy-p22Bp1x2TkKQdMOuFRM4GA?loc=29.780368,-82.034051,15.43z"
+  src="https://felt.com/embed/map/Tree-Canopy-p22Bp1x2TkKQdMOuFRM4GA?loc=29.78019,-82.04607,14z"
 ></iframe>
 
 ### Elevation
@@ -139,10 +139,10 @@ Elevation helps pinpoint areas vulnerable to sea-level rise (if applicable), sto
 
 <iframe
   width="100%"
-  height="600"
+  height="450"
   frameborder="0"
   title="Felt Map"
-  src="https://felt.com/embed/map/Elevation-Q815VYkdR52upVYVa20K2A?loc=29.780417,-82.034028,15.44z"
+  src="https://felt.com/embed/map/Elevation-Q815VYkdR52upVYVa20K2A?loc=29.77941,-82.04535,14z"
 ></iframe>
 
 ### Slope
@@ -151,8 +151,8 @@ Slope aids in determining areas at risk of landslides, erosion, and rapid water 
 
 <iframe
   width="100%"
-  height="600"
+  height="450"
   frameborder="0"
   title="Felt Map"
-  src="https://felt.com/embed/map/Slope-VriJU1OtTDC8LA5ARV0KoC?loc=29.780278,-82.034028,15.49z"
+  src="https://felt.com/embed/map/Slope-VriJU1OtTDC8LA5ARV0KoC?loc=29.77993,-82.04621,14z"
 ></iframe>
