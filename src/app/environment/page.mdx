@@ -1,8 +1,12 @@
 import { Libraries } from '@/components/Libraries'
 import { MDXImage } from '@/components/MDXImage'
+
+import { Tabs, Tab } from '@/components/Tabs'
 import Chart from './chart.png'
 import Table from './high_table.png'
 import Map from './map.png'
+import PE from './precip_xtreme.png'
+import HE from './heat_xtreme.png'
 
 export const metadata = {
   title: 'Know Your Environment',
@@ -23,17 +27,9 @@ Impact is relative to the potential impact of climate-related outcomes across yo
 
 Climate change amplifies precipitation extremes, leading to increased instances of both severe flooding and acute water stress. These extremes are further intensified by high population density and specific land use practices.
 
-<iframe
-  width="100%"
-  height="450"
-  frameborder="0"
-  title="Felt Map"
-  src="https://felt.com/embed/map/Combined-Risk-QfV89AB3xTXiqsF31n4eSKA?loc=29.78082,-82.04492,14z"
-></iframe>
+<MDXImage src={PE} alt="Precipitation Extremes" width={800} />
 
 An elevation sink is essentially a depression in the ground where water accumulates because there's no clear path for it to drain. In these areas, water tends to pond, creating marshy conditions and potentially damaging properties over time.
-
-[additional flood detail: elevation sinks]
 
 ### Elevation Sinks
 
@@ -49,13 +45,7 @@ An elevation sink is essentially a depression in the ground where water accumula
 
 Climate change drives more frequent and intense temperature extremes, particularly impacting urban environments. Factors like high population density and specific land use practices exacerbate these extremes, particularly through the urban heat island effect.
 
-<iframe
-  width="100%"
-  height="450"
-  frameborder="0"
-  title="Felt Map"
-  src="https://felt.com/embed/map/Untitled-Map-Ayl3s09CHSuSDBuESMsKNqB?loc=29.78103,-82.04604,14z"
-></iframe>
+<MDXImage src={HE} alt="Heat Extremes" width={800} />
 
 ## The Top Three Contributing Factors
 
