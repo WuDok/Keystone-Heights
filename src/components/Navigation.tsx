@@ -234,10 +234,12 @@ export const navigation: Array<NavGroup> = [
     title: 'Keystone Heights, Florida',
     links: [
       { title: 'Understanding Risk & Resilience', href: '/' },
-      { title: 'Know Your Environment', href: '/environment' },
-      { title: 'Take Action', href: '/take-action' },
+      { title: 'Risks - Know Your Environment', href: '/environment' },
+      { title: 'Climate Impact', href: '/impact' },
+      { title: 'Resilience - Take Action', href: '/take-action' },
     ],
   },
+
   // {
   //   title: 'Merak App Documentation',
   //   links: [
