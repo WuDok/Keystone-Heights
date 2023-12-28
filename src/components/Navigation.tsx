@@ -235,7 +235,7 @@ export const navigation: Array<NavGroup> = [
     links: [
       { title: 'Understanding Risk & Resilience', href: '/' },
       { title: 'Risks - Know Your Environment', href: '/environment' },
-      { title: 'Climate Impact', href: '/impact' },
+      { title: 'Understanding Climate Impact', href: '/impact' },
       { title: 'Resilience - Take Action', href: '/take-action' },
     ],
   },
