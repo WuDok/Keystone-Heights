@@ -8,5 +8,14 @@ interface MDXImageProps {
 }
 
 export function MDXImage({ src, alt, width, height }: MDXImageProps) {
-  return <Image src={src} alt={alt} width={width} height={height} />
+  return (
+    <Image
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      style={{ width: '100%', height: 'auto' }}
+      layout="responsive"
+    />
+  )
 }
